@@ -1,0 +1,12 @@
+{
+  "name": "ldap-test",
+  "version": "1.0.0",
+  "scripts": "dist/main.js",
+  "targets": [
+    "node18-win-x64"
+  ],
+  "outputPath": "pkg-build",
+  "assets": [
+    "public/**/*"
+  ]
+}
