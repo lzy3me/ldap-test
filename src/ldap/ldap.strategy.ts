@@ -3,8 +3,9 @@ import { PassportStrategy } from "@nestjs/passport";
 import * as Strategy from "passport-ldapauth";
 
 @Injectable()
-export class LdapStrategy extends PassportStrategy(Strategy, "ldap") {
+export class LdapStrategy extends PassportStrategy(Strategy, "LDAP") {
   constructor() {
+    console.log("RUNNING?");
     super({
       passReqToCallback: true,
       server: {
@@ -18,6 +19,8 @@ export class LdapStrategy extends PassportStrategy(Strategy, "ldap") {
   }
 
   async validate(user: any) {
+    console.log("VALIDATE?");
+    console.log("user", user);
     return user;
   }
 }

@@ -1,7 +1,7 @@
-import { LdapGuard } from './ldap.guard';
+import { LdapGuard } from "./ldap.guard";
 
-describe('LdapGuard', () => {
-  it('should be defined', () => {
+describe("LdapGuard", () => {
+  it("should be defined", () => {
     expect(new LdapGuard()).toBeDefined();
   });
 });
